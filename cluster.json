@@ -1,0 +1,12 @@
+##https://snakemake.readthedocs.io/en/stable/snakefiles/configuration.html#cluster-configuration
+{
+    "__default__": {
+        "queue": "guest",
+        "time": "7-00:00:00",
+        "n": 16,
+        "mem": 45000,
+        "name": "JOBNAME.{rule}.{wildcards}",
+        "output": "logs/cluster/{rule}.{wildcards}.out",
+        "error": "logs/cluster/{rule}.{wildcards}.err"
+    }
+}

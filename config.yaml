@@ -1,0 +1,12 @@
+raw_data_dir: raw_data/ 
+adapter: GTCGGAGAACCAGTAGCTAGCTACTGGTTCTCCGAC
+scripts:
+    linker_rm: ../../scripts/linker_rm_ng_paper.py
+fastp_split:
+    file_num: 40
+bowtie2_aln:
+    reference: ../../data/reference/GCA_000001405.15_GRCh38_no_alt_analysis_set.fna
+    cpu_num: 14
+hicBuildMatrix:
+    binSize: 10000
+    #bufferSize: 2000000
